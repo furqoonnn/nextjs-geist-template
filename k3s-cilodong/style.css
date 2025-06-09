@@ -1,0 +1,135 @@
+/*
+Theme Name: K3S Cilodong
+Theme URI: https://k3scilodong.org
+Author: K3S Cilodong
+Author URI: https://k3scilodong.org
+Description: Custom theme for K3S Kecamatan Cilodong website
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: k3s-cilodong
+*/
+
+/* Tailwind CSS */
+@import url('https://cdn.tailwindcss.com');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a202c;
+    background-color: #f7fafc;
+}
+
+/* Header */
+.site-header {
+    @apply bg-white shadow-sm;
+}
+
+.site-title {
+    @apply text-xl font-bold text-blue-600;
+}
+
+/* Navigation */
+.main-navigation {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.nav-menu {
+    @apply flex items-center space-x-4;
+}
+
+.nav-menu li a {
+    @apply px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600;
+}
+
+/* Banner */
+.banner {
+    @apply relative w-full h-[500px] overflow-hidden bg-gradient-to-r from-blue-600 to-blue-700;
+}
+
+.banner-content {
+    @apply relative h-full flex items-center justify-center px-4;
+}
+
+.banner-card {
+    @apply max-w-2xl p-6 bg-white/95 backdrop-blur-sm;
+}
+
+/* Content */
+.site-content {
+    @apply container mx-auto px-4 max-w-7xl py-12;
+}
+
+.page-title {
+    @apply text-4xl font-bold text-gray-900 mb-4;
+}
+
+.entry-content {
+    @apply prose prose-blue max-w-none;
+}
+
+/* Cards */
+.card {
+    @apply bg-white rounded-lg shadow-sm overflow-hidden;
+}
+
+.card-header {
+    @apply p-6 border-b;
+}
+
+.card-content {
+    @apply p-6;
+}
+
+/* Forms */
+.form-input {
+    @apply w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.form-label {
+    @apply text-sm font-medium text-gray-900;
+}
+
+.submit-button {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+/* Footer */
+.site-footer {
+    @apply bg-white border-t;
+}
+
+.footer-content {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        @apply flex-col;
+    }
+}
+
+/* WordPress Specific */
+.alignwide {
+    @apply max-w-screen-xl mx-auto;
+}
+
+.alignfull {
+    @apply max-w-full w-full;
+}
+
+.wp-block-image img {
+    @apply max-w-full h-auto;
+}
+
+.wp-caption {
+    @apply max-w-full;
+}
+
+.wp-caption-text {
+    @apply text-sm text-gray-600 mt-2;
+}
